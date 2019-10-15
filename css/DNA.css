@@ -6,12 +6,12 @@
   #dna-buttonL{
     position: absolute;
       top: 52px;
-      left: 20%;
+      left: 10%;
   }
   #rna-buttonL{
     position: absolute;
       top: 52px;
-      left: 24%;
+      left: 15%;
   }
   
    @media only screen and  (max-width: 1455px) and (min-width: 1068px) {
