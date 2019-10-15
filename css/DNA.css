@@ -1,0 +1,46 @@
+
+    
+  .radio{
+   
+  font-size: 25px;
+  left: 17%;
+  }
+  #dna-buttonL{
+    position: absolute;
+      top: 52px;
+      left: 25%;
+  }
+  #rna-buttonL{
+    position: absolute;
+      top: 52px;
+      left: 24%;
+  }
+  
+   @media only screen and  (max-width: 1455px) and (min-width: 1068px) {
+    #dna-buttonL{
+      position: absolute;
+        top: 52px;
+        left: 24%;
+    }
+    #rna-buttonL{
+      position: absolute;
+        top: 52px;
+        left: 33%;
+    }
+   
+    }
+   @media only screen and  (max-width: 1068px) {
+    
+   }
+  
+    #dna-buttonL{
+      position: absolute;
+        top: 52px;
+        left: 8%;
+    }
+    #rna-buttonL{
+      position: absolute;
+        top: 52px;
+        left: 18%;
+    }
+   

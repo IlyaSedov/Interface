@@ -1,0 +1,38 @@
+body{
+  
+  background: linear-gradient(to right, rgb(241, 222, 204),  rgb(241, 222, 204));
+
+  }
+ .general-menu
+ {  
+ 
+  position: relative;
+   display: block;
+   font-size: 45px;
+   margin: 40px 150px auto ;
+ }
+ a {
+   color: rgb(255, 255, 255);
+  background-color: #5077a1;
+  border: 1px solid rgb(85, 100, 119); 
+  display:block;
+  padding: 5px 8px 10px 15px ; 
+  text-decoration: none; 
+  margin: 3px; 
+  
+}
+  a:hover {
+  box-shadow: 0 0 5px rgba(60, 141, 179, 0.3); 
+  background: linear-gradient(to bottom, #799bc0, #2c5988); 
+  color: rgb(255, 255, 255);
+ }
+ 
+ 
+ .container { 
+  display: block; 
+  width: 640px; 
+  border: 2px solid#5077a1; 
+  border-radius: 15px; 
+  margin: 50px auto 60px; 
+  padding: 0px 0px 20px 0px;
+  }

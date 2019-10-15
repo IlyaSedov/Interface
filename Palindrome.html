@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Проверкага палиндром</title>
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="./scr/Palindrome.js"></script>
+  <script src="./scr/PalindromeDOM.js"></script>
+  <nav id="menu" role="navigation">
+    <div class="brand">&Sopf;</div>
+    <ul>
+      <li><a href="DNA.html">Конвертр ДНК</a></li>
+      <li><a href="Substr.html">Подстрока</a></li>
+      <li><a href="ToDoList.html">Список дел</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrap">
+
+    <button id="menu-toggle"></button>
+
+    <div class="container-fluid">
+      <div class="row">
+
+
+        <!-- <img src="http://drawings-girls.ucoz.net/2015/04/devushka-ohotnik-s-pilauhei-iskroi.jpg" class="img-responsive" alt="" /> -->
+        <!-- <p class='greeting'></p> -->
+        <div class='block'>
+          <h1>Проверка на палиндром</h1>
+          <div>
+            <input id='block-left' type="text" name="RNA" size="40" placeholder="Ввдите строку, допустим: 404, абба">
+            <div id='block-right' name="DNA">
+              <span>Результат: </span>
+              <span id='block-right-answer'> </span>
+            </div>
+            <button id='button-P' onClick="interF()">Проверка</button><Br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //Exelent little functions to use any time when class modification is needed
+    function hasClass(ele, cls) {
+      return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+    }
+    function addClass(ele, cls) {
+      if (!hasClass(ele, cls)) ele.className += " " + cls;
+    }
+    function removeClass(ele, cls) {
+      if (hasClass(ele, cls)) {
+        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+        ele.className = ele.className.replace(reg, ' ');
+      }
+    }
+    //Add event from js the keep the marup clean
+    function init() {
+      document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+    }
+    //The actual fuction
+    function toggleMenu() {
+      var ele = document.getElementsByTagName('body')[0];
+      if (!hasClass(ele, "open")) {
+        addClass(ele, "open");
+      } else {
+        removeClass(ele, "open");
+      }
+    }
+    //Prevent the function to run before the document is loaded
+    document.addEventListener('readystatechange', function () {
+      if (document.readyState === "complete") {
+        init();
+      }
+    });
+  </script>
+</body>
+
+</html>
