@@ -1,7 +1,5 @@
 
-    
   .radio{
-   
   font-size: 25px;
   left: 17%;
   }
@@ -30,9 +28,13 @@
    
     }
    @media only screen and  (max-width: 1068px) {
-    
-   }
-  
+       
+  .radio{
+
+  left: 1%;
+  }
+       
+ 
     #dna-buttonL{
       position: absolute;
         top: 52px;
