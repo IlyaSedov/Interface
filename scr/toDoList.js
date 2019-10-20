@@ -24,6 +24,7 @@ list.addEventListener('click', (ev) => {
 const newEl = () => {
   let li = document.createElement('li'),
      inputValue = document.getElementById('toDoEl').value;
+     li.className="toItem";
      if(inputValue == "") {
       inputValue = "Пусто";
     } 
