@@ -11,32 +11,16 @@
 </head>
 
 <body>
-  
   <nav id="menu" role="navigation">
     <div class="brand">&Sopf;</div>
-    <span class="itemS" ><a href="Palindrome.html">Палиндром</a></span><br>
+    <span class="itemS"><a href="Palindrome.html">Палиндром</a></span><br>
     <span class="itemS"><a href="Substr.html">Подстрока</a></span><br>
     <span class="itemS"><a href="DNAtoRNA.html">Конвертр</a></span>
-    <!-- <ul>
-      <li><a href="Palindrome.html">Палиндром</a></li>
-      <li><a href="Substr.html">Подстрока</a></li>
-      <li><a href="ToDoList.html">Список дел</a></li>
-    </ul> -->
   </nav>
   <div class="page-wrap">
     <button id="menu-toggle"></button>
     <div class="container-fluid">
       <div class="row">
-        <!-- <div class="wrapper">
-          <div class="header">
-            <h1>Список дел</h1>
-            <input type="text" placeholder="Введите новое дело..." id="toDoEl">
-            <span class="addBtn" onClick="newEl()">Добавить</span>
-          </div>
-          <ul id="list">
-
-          </ul>
-        </div> -->
       </div>
     </div>
     <div class="wrapper">
@@ -49,39 +33,7 @@
 
       </ul>
     </div>
-    <script>
-      //Exelent little functions to use any time when class modification is needed
-      function hasClass(ele, cls) {
-        return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-      }
-      function addClass(ele, cls) {
-        if (!hasClass(ele, cls)) ele.className += " " + cls;
-      }
-      function removeClass(ele, cls) {
-        if (hasClass(ele, cls)) {
-          var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-          ele.className = ele.className.replace(reg, ' ');
-        }
-      }
-      //Add event from js the keep the marup clean
-      function init() {
-        document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
-      }
-      //The actual fuction
-      function toggleMenu() {
-        var ele = document.getElementsByTagName('body')[0];
-        if (!hasClass(ele, "open")) {
-          addClass(ele, "open");
-        } else {
-          removeClass(ele, "open");
-        }
-      }
-      //Prevent the function to run before the document is loaded
-      document.addEventListener('readystatechange', function () {
-        if (document.readyState === "complete") {
-          init();
-        }
-      });
+    <script src="./scr/menuScript.js">
     </script>
     <script src="./scr/toDoList.js"></script>
 </body>
