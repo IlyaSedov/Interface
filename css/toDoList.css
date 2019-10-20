@@ -23,12 +23,7 @@ ul li {
   user-select: none;
 }
 .itemS{
-/* display: block;
-  font-size: 28px;
-  padding: 5px;
-  margin: 5px 5px 8px 5px;
-  border: black;
-   */
+
    display: block;
    font-weight: 900;
    line-height: 50px;
